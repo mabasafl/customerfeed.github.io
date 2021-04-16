@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: greenyellow;
+            width: 400px;
+            height: 400px;    
+            margin:100px 500px;
+            line-height: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #customer-feed {
+            background: white;
+            padding: 10px;
+            
+        }
+        
+        .nav {
+            display: flex;
+            
+            
+        }
+
+        .bar {
+            margin-right: 60px;
+        }
+
+        .color{
+            color:orange ;
+        }
+        .nav h2 .user {
+            padding-left: 60px;
+            color: grey;
+            
+            
+        }
+
+       .search {
+           margin: 20px 10px;
+        
+        }
+
+        input {
+            width: 80%;
+            
+        }
+
+        .ukulele-picture img{
+            width: 250px;
+            display: flex;
+            margin-top: 10px;
+            margin-left: 70px;
+            
+        }
+        .product-details {
+            padding: 10px 0;
+            margin:15px 0;
+            border-top: 1px #A9A9A9 dotted;
+            border-bottom: 1px #A9A9A9 dotted;
+        }
+
+        .product-details a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 13px;
+            color:#4169ff; ;
+        }
+
+        .product-details p {
+            font-weight: bold;
+            font-size: 17px;
+            color: #171717;
+        }
+
+        .share-button {
+            margin-left: 30px;
+        }
+
+        .price-details {
+            margin-bottom: 5px;
+        }
+        
+        .price .sale p{
+            font-size: 25px;
+            color: #171717;
+            
+            
+        }
+
+        .price {
+            display: flex;
+            
+        }
+
+        .price-details del{
+            padding-left: 10px;
+            font-size: 16px;
+            color: red;
+        }
+
+        .price-details .price .info {
+            background: gray;
+            color: white;
+            margin-left: 10px;
+            padding: 0px 10px;
+            border-radius: 50%;
+            font-weight: bold;
+            
+        }
+
+        .delivery {
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .credit {
+            font-size: 13px;
+            color: #343434
+
+        }
+
+        .cart {
+            background: #228b22;
+            color: white;
+            text-align: center;
+            text-align: center;
+            margin-right: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            
+            
+        }
+        
+        .cart a {
+            color: white;
+            text-decoration: none;
+            padding-left: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            
+        }
+        .review-head {
+            border-bottom: 1px #A9A9A9 dotted;
+            
+        }
+
+        .review-head h1 {
+            font-weight: 150;
+            font-size: 20px;
+        }
+
+        .overall {
+            font-size: 18px;
+            font-weight:bold;
+        }
+
+        .mid-box {
+            margin-top: 15px;
+            padding:10px;
+            background: #e0ffff;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .star-rate-count {
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        .mid-box a {
+            background: #00aae4;
+            color: white;
+            padding: 10px;
+            border-radius: 3px;
+            text-decoration: none;
+            
+        }
+
+        .write-review {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .checked {
+            color: orange;
+        }
+
+        .person , 
+        .bg-text{
+         color: #343434;   
+        }
+
+        .reviews {
+            padding: 8px 0;
+        }
+
+        .rate-flex {
+            display: flex;
+
+        }
+        .date {
+            padding: 0 10px;
+        }
+
+        .bottom {
+            border-bottom: 1px dotted #A9A9A9;
+        }
+
+        .report {
+            padding: 5px 0;
+            color: #4169ff;
+        }
+    </style>
+</head>
+<body>
+    <section id="customer-feed">
+       <div class="nav">
+            <span><i class="fa fa-bars fa-lg bar"></i></span>
+            <span>
+                <h2 class="comapny-name">Guitar<span class="color">Online.com</span>
+                    <span>
+                         <i class="fa fa-user fa-lg user"></i>
+                    </span>
+                </h2>
+            </span>
+            
+       </div> 
+
+        <i class="fa fa-search search"></i>
+        <input type="text" placeholder="Search products, brands...">
+        
+
+        <div class="ukulele-picture">
+            <img src="./ukulele.jpg" alt="ukulele">
+        </div>
+
+        <div class="product-details">
+            <p>Fender Seaside Soprano Ukulele Pack<i class="fa fa-share-alt share-button"></i></p>
+            <a href="#">FENDER</a>
+        </div>
+
+        <div class="price-details">
+            <div class="price">
+                <span class="sale"><p>R2,329 </p></span>
+                <span><del>R3,329</del></span> 
+                <span class="info"><p>i</p></span>
+            </div>
+            
+            <p class="delivery">FREE DELIVERY</p>
+            <p class="credit">On Credit:R213/month</p>
+        </div>
+
+        <!--<span class="wishlist one">
+            <i class="fa fa-heart"></i>
+        </span>-->
+        <div class="cart">
+            <span><i class="fa fa-shopping-cart fa-lg"><a href="#">ADD TO CART</a></i></span>
+        </div>
+
+        <div class="review-head">
+            <h1>Customer feedback (3)</h1>
+        </div>
+
+        <div class="mid-box">
+            <div>
+                <h3 class="overall">Overall Rating</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <div class="star-rate-count">
+                <p>3 out of 5 stars</p>
+            </div>
+            <div class="write-review">
+                <a href="#">Write A Review</a>
+            </div>
+        </div>
+
+        <section class="last-part">
+            <div class="reviews">
+                <div class="rate-flex">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="date">
+                        <p class="bg-text">9 March 2021</p>
+                    </span>  
+                </div>
+                
+                <span><h4 class="person">Fumisani</h4></span>
+                <p class="bg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sequi odio, nihil ea at eligendi illo ipsum soluta perspiciatis doloremque?</p>
+                <h3 class="bottom report">Report</h3>
+            </div>
+            <div class="reviews">
+                <div class="rate-flex">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="date">
+                        <p class="bg-text">9 March 2021</p>
+                    </span>  
+                </div>
+                
+                <span ><h4 class="person">Fumisani</h4></span>
+                <p class="bg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur harum explicabo hic, qui quos a sit repellendus suscipit facilis.</p>
+                <h3 class="bottom report">Report</h3>
+            </div>
+            <div class="reviews">
+                <div class="rate-flex">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="date">
+                        <p class="bg-text">9 March 2021</p>
+                    </span> 
+                </div>
+                
+                <span><h4 class="person">Fumisani</h4></span>
+                <p class="bg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur debitis officiis deserunt quidem tempora ad recusandae eveniet quaerat adipisci esse.</p>
+                <h3 class="report">Report</h3>
+            </div>
+        </section>
+    </section>
+    
+</body>
+</html>
